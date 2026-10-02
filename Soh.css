@@ -1,0 +1,37 @@
+.container{
+    display: grid;
+    grid-template-columns: 10px 1fr 1fr 10px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header header header header"
+    " . main main . "
+    "footer footer footer footer";
+    gap: 10px;
+}
+header{
+    grid-area: header;
+    background-color:darkgoldenrod;
+}
+main{
+    grid-area: main;
+    background-color:lightgoldenrodyellow;
+}
+body{
+    background-image: url("Space.jpg");
+    background-size: cover;
+}
+footer{
+    grid-area:footer;
+    background-color:darkgoldenrod;
+}
+
+.container2{
+    display:grid;
+    grid-template-columns: 10px 1fr 1fr 10px;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "first second third fourth"
+    "first second third fourth"
+    "first second third fourth";
+    gap: 10px;
+}
