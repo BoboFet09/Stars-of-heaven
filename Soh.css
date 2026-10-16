@@ -1,20 +1,22 @@
 .container{
     display: grid;
-    grid-template-columns: 10px 1fr 1fr 10px;
+    grid-template-columns: 10px 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
     "header header header header"
-    " . main main . "
+    " . main main nyhet "
+    " . main main tour "
     "footer footer footer footer";
     gap: 10px;
 }
 header{
     grid-area: header;
-    background-color:darkgoldenrod;
+    background-color:goldenrod;
 }
 main{
     grid-area: main;
     background-color:lightgoldenrodyellow;
+    text-align: center;
 }
 body{
     background-image: url("Space.jpg");
@@ -22,16 +24,142 @@ body{
 }
 footer{
     grid-area:footer;
-    background-color:darkgoldenrod;
+    background-color:goldenrod;
 }
 
 .container2{
     display:grid;
-    grid-template-columns: 10px 1fr 1fr 10px;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
+    "header2 header2 header2 header2"
     "first second third fourth"
     "first second third fourth"
-    "first second third fourth";
+    "first second third fourth"
+    "footer2 footer2 footer2 footer2";
     gap: 10px;
+}
+.footer2{
+    grid-area:footer2;
+    background-color:goldenrod;
+}
+
+
+.sirius, .polaris, .vega, .betelgeuse {
+    background-color: lightgoldenrodyellow;
+    text-align: center;
+}
+.header2{
+    grid-area: header2;
+    background-color:goldenrod;
+}
+.image{
+    height: 200px;
+    width: 200px;
+}
+table{
+    border: 1px solid black;
+    width: 100%;
+}
+tr:nth-child(even){
+    background-color:peru
+}
+tr:nth-child(odd){
+    background-color:orange
+}
+.tabell{
+    table-layout:fixed;
+    grid-column: 1/-1    
+}
+.container3{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header3 header3 header3 header3"
+    " sallebild salle salle salle "
+    " olofbild olof olof olof "
+    " hampusbild hampus hampus hampus "
+    "footer3 footer3 footer3 footer3";
+    gap: 10px;
+
+
+}
+.header3{
+    grid-area: header3;
+    background-color:goldenrod;
+}
+.footer3{
+    grid-area: footer3;
+    background-color:goldenrod;
+}
+.salle{
+    grid-area: salle;
+    background-color:lightgoldenrodyellow;
+  
+}
+.olof{
+    grid-area: olof;
+    background-color: lightgoldenrodyellow;
+ 
+}
+.hampus{
+    grid-area:hampus;
+    background-color: lightgoldenrodyellow;
+}
+li{
+    padding:6px;
+}
+
+.sallebild{
+    grid-area:sallebild;
+     height:300px;
+}
+.olofbild{
+    grid-area:olofbild;
+     height:300px;
+
+}
+.hampusbild{
+    grid-area:hampusbild;
+     height:300px;
+}
+.grupp{
+    
+    background-color:transparent;
+    text-align: center;
+   
+}
+.album{
+    
+    background-color:transparent;
+    text-align: center;
+
+   
+}
+.startsida{
+    background-color:transparent;
+    text-align: center;
+}
+.navborder{
+    border: 1px solid blueviolet;
+}
+.navigation{
+    margin:0%;
+    padding: 0%;
+}
+
+.tourtext{
+    padding: 6px;
+    font:icon;
+}
+.tour{
+    grid-area: tour;
+}
+.nyhet{
+    grid-area: nyhet;
+    text-align:center;
+    background-color:gold;
+    padding:30px;
+    margin:0px;
 }
